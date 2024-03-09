@@ -229,7 +229,7 @@ main {
 
 
 .card{
-    width: 400px;
+    width: 280px;
     height: auto;
     box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
     padding: 0 0 30px;
@@ -238,7 +238,7 @@ main {
 
 .img{
     display: block;
-    height: 400px;
+    height: 300px;
     width: 100%;
     
 }
@@ -256,7 +256,7 @@ main {
 .footer {
     padding: 50px;
     background-color: #000;
-    height: auto;
+    max-height: auto;
     width: 100%;
     color: #FFF;
     font-size:clamp(15px , 4wv , 20px);
@@ -309,7 +309,7 @@ main {
 
 
  .titulo_nos{
-    background-color: red;
+    background-color: rgba(141, 135, 135, 0.235);
     text-align: center;
     margin: 100px 0 50px 0px;
  }
@@ -317,8 +317,83 @@ main {
  .main_nos{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(min(11rem,100%),1fr));
-    grid-gap:100px
+    grid-gap:100px;
+    width: 100%;
  }
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+ :root{
+     --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     --gradient1: linear-gradient(135deg, #667eea86 0%, #764ba28e 100%);
+     --box-shadow: 6px 6px 10px rgba(0,0,0,.6);
+     --width: 100%;
+     --radius: 2px;
+ }
+ 
+
+.aside_cont{
+    display: block;
+    width: 100%;
+    margin:0px 30px 0px 0px;
+}
+
+ .form_{
+    width: 100%;
+    background: #000000;
+    color: #fff;
+    padding: 30px 20px 40px ;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+
+}
+
+.input{
+    width: var(--width);
+    padding: 20px 5px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #b39b9b;
+    outline: none;
+}
+
+.input, .form__submit{
+    font-family: inherit;
+}
+
+.form__title{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.form__message{
+    max-width: var(--width);
+    min-width: var(--width);
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.form__submit{
+    display: block;
+    width: var(--width);
+    font-size: 18px;
+    background-color:#000;
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form__submit:hover{
+    background-color:#ec7e00;
+}
 
 
 
